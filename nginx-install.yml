@@ -1,6 +1,9 @@
 ---
   - name: nginx install and start service
-    hosts: all
+    all:
+    hosts:
+      172.31.2.92:
+        ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
     become: true
 
     tasks:
