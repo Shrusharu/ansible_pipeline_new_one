@@ -1,0 +1,4 @@
+FROM ubuntu 
+MAINTAINER Shruthikpoojary <shruthikssss@gmail.com>
+RUN apt-get update
+CMD ["echo", "Hello-World"]
